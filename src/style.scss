@@ -1,3 +1,4 @@
+$color1: rgb(255, 202, 104);
 * {
     margin: 0;
 	padding: 0;
@@ -10,12 +11,9 @@
     src: 
         url('./fonts/Montserrat.ttf') format('woff'); 
     font-style: normal;
-}
-@font-face {
-    font-family: 'Parisienne';
-    src: 
-        url('./fonts/Parisienne-Regular.ttf') format('woff'); 
-    font-style: normal;
+	font-family: 'Parisienne';
+	src: url('./fonts/Parisienne-Regular.ttf') format('woff');
+	font-style: normal;
 }
 
 #content {
@@ -47,7 +45,7 @@ main {
     font-family: 'Parisienne', sans-serif;
     font-weight: 100;
     line-height: 1.5rem;
-    color: rgb(255, 202, 104);
+    color: $color1;
 }
 .main-content {
     font-size: 1.5rem;
@@ -60,13 +58,13 @@ main {
     align-items: center;
     width: 100%;
     padding: 1.2rem 0;
-    border-bottom: 2px solid rgb(255, 202, 104);
-}
-.nav-items {
+    border-bottom: 2px solid $color1;
+	.nav-items {
     font-size: 1.2rem;
-    display: flex;
-    list-style: none;
-    gap: 4rem;
+	display: flex;
+	list-style: none;
+	gap: 4rem;
+    }
 }
 
 footer {
@@ -75,5 +73,5 @@ footer {
     justify-content: center;
     width: 100%;
     padding: 1.2rem 0;
-    border-top: 2px solid rgb(255, 202, 104);
+	border-top: 2px solid $color1;
 }
