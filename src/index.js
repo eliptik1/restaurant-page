@@ -1,9 +1,4 @@
 import './style.scss'
+import { createPage } from "./create-page"
 
-console.log("test...")
-
-function func(){
-    return "my function"
-}
-
-console.log(func())
+createPage()
