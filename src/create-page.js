@@ -3,10 +3,10 @@ import { footer } from "./footer"
 import { home } from "./home"
 
 
-function createPage(){
+function createPage(newPage){
     const mainContainer = document.querySelector("#content")
     mainContainer.appendChild(nav)
-    mainContainer.appendChild(home)
+    mainContainer.appendChild(newPage)
     mainContainer.appendChild(footer)
     return mainContainer
 }

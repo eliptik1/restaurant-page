@@ -8,6 +8,10 @@ function createNav(){
     const homeBtn = document.createElement("li")
     const menuBtn = document.createElement("li")
     const contactBtn = document.createElement("li")
+    
+    homeBtn.classList.add("home")
+    menuBtn.classList.add("menu")
+    contactBtn.classList.add("contact")
 
     homeBtn.textContent = "Home"
     menuBtn.textContent = "Menu"
