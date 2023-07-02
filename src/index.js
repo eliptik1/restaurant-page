@@ -12,23 +12,21 @@ const homeBtn = document.querySelector(".home")
 const menuBtn = document.querySelector(".menu")
 const contactBtn = document.querySelector(".contact")
 
+function renderPage(tabName, element) {
+    const mainContent = document.querySelector("main")
+    if(mainContent.classList.contains(tabName)) return
+    mainContainer.textContent = ""
+    createPage(element)
+}
+
 homeBtn.addEventListener("click", () => {
-    const mainContent = document.querySelector("main")
-    if(mainContent.classList.contains("home")) return
-    mainContainer.textContent = ""
-    createPage(home)
+    renderPage("home", home)
 })
 
-menuBtn.addEventListener("click", () =>  {  
-    const mainContent = document.querySelector("main")
-    if(mainContent.classList.contains("menu")) return
-    mainContainer.textContent = ""
-    createPage(menu)
+menuBtn.addEventListener("click", () => {  
+    renderPage("menu", menu)
 })
 
-contactBtn.addEventListener("click", () =>  {  
-    const mainContent = document.querySelector("main")
-    if(mainContent.classList.contains("contact")) return
-    mainContainer.textContent = ""
-    createPage(contact)
+contactBtn.addEventListener("click", () => {  
+    renderPage("contact", contact)
 })
