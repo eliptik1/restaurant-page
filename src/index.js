@@ -19,14 +19,6 @@ function renderPage(tabName, element) {
     createPage(element)
 }
 
-homeBtn.addEventListener("click", () => {
-    renderPage("home", home)
-})
-
-menuBtn.addEventListener("click", () => {  
-    renderPage("menu", menu)
-})
-
-contactBtn.addEventListener("click", () => {  
-    renderPage("contact", contact)
-})
+homeBtn.addEventListener("click", () => renderPage("home", home))
+menuBtn.addEventListener("click", () => renderPage("menu", menu))
+contactBtn.addEventListener("click", () => renderPage("contact", contact))

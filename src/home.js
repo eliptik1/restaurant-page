@@ -6,7 +6,7 @@ function createHome(){
     const header2 = document.createElement("h1")
     const paragraph = document.createElement("p")
 
-    main.classList.add("home")
+    main.classList.add("home-main")
     header1.classList.add("main-header")
     header2.classList.add("main-header-2")
     paragraph.classList.add("main-content")

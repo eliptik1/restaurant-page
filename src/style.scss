@@ -41,15 +41,22 @@ $color1: rgb(255, 202, 104);
 }
 
 main {
+    width: 100%;
+    height: 100%;
     text-align: center;
     font-size: 2rem;
 }
 .main-header {
     font-family: 'Parisienne', sans-serif;
     font-weight: 100;
-    line-height: 1.5rem;
-    color: $color1;
+    color: #c2943d;
+    margin-top: 2rem;
 }
+.main-header-2 {
+    margin-top: -2rem;
+    color: rgb(54 54 54);
+}
+
 .main-content {
     font-size: 1.5rem;
 }
@@ -86,4 +93,62 @@ footer {
     width: 100%;
     padding: 1.2rem 0;
 	border-top: 2px solid $color1;
+}
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.2rem;
+    .main-header {
+        margin-top: -2rem;
+        color: $color1;
+    }
+    .main-header-2 {
+        color: white;
+    }
+}
+
+hr {
+    border: 2px solid #c2943d;
+    width: 250px;
+    margin: 2.5rem auto;
+}
+
+.white-bg {
+    padding: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff7e6;
+    overflow: scroll;
+    
+}
+.menu-item {
+    max-width: 700px;
+    .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 0.5rem;
+    font-weight: 900;
+    color: #c2943d;
+    }
+    .item-description {
+        color: rgb(54 54 54);
+        font-size: 1.2rem;
+        text-align: left;
+        
+    }
+    hr {
+    border: 1px solid #c2943d;
+    }
+    .item-seperator {
+        border-top: 2px dashed #c2943d;
+        flex-grow: 1;
+        margin: 0 2rem;
+    }
+}
+.menu-container:last-child {
+    margin-bottom: 4rem;
 }
