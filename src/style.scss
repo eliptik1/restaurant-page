@@ -152,3 +152,26 @@ hr {
 .menu-container:last-child {
     margin-bottom: 4rem;
 }
+
+main.contact {
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    p {
+        font-size: 1.4rem;
+        width: 60vw;
+    }
+    ul {
+        font-size: 1.4rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
