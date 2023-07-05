@@ -146,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   footer: () => (/* binding */ footer)\n/* harmony export */ });\nfunction createFooter(){\n    const footer = document.createElement(\"footer\")\n\n    footer.innerHTML = `Copyright &copy 2023 eliptik1 &nbsp\n    <a href=\"https://github.com/eliptik1\">\n        <i class=\"fa fa-github\" style=\"font-size:26px; color: rgb(255, 202, 104)\"></i>\n    </a>`\n\n    return footer\n}\n\nconst footer = createFooter()\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   footer: () => (/* binding */ footer)\n/* harmony export */ });\nfunction createFooter(){\n    const footer = document.createElement(\"footer\")\n    const head = document.querySelector(\"head\")\n    head.innerHTML += `<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">`\n    footer.innerHTML = `Copyright &copy 2023 eliptik1 &nbsp\n    <a href=\"https://github.com/eliptik1\">\n        <i class=\"fa fa-github\" style=\"font-size:26px; color: rgb(255, 202, 104)\"></i>\n    </a>`\n\n    return footer\n}\n\nconst footer = createFooter()\n\n\n\n//# sourceURL=webpack://restaurant-page/./src/footer.js?");
 
 /***/ }),
 
